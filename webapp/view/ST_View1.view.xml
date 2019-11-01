@@ -1,0 +1,19 @@
+<mvc:View controllerName="SThorat.ST_Assignment1.controller.ST_View1" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Input
+							id="productInput"
+							type="Text"
+							placeholder="Enter Product ..."
+							showValueHelp="true"
+							valueHelpRequest="handleValueHelp">
+						</Input>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
