@@ -1,0 +1,49 @@
+<mvc:View controllerName="demo.MyODPApp.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="InvoicePage" title="Sales Order Display">
+					<content>
+						<Table id="TabId" width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20"
+							growingScrollToLoad="true" class="myCustomTable" items="{/results}" alternateRowColors="true">
+							<columns>
+								<Column width="12em">
+									<Text text="Sales Order"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="Status"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+									<Text text="Total Amount"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+									<Text text="Currency"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+									<Text text="CustomerName"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+									<Text text="BillingStatusDescription"/>
+								</Column>
+								
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="{SalesOrderID}" /> <!--text="{Belnr}"-->
+										<Text text="{Status}"/>
+										<Text text="{TotalSum}"/>
+										<Text text="{Currency}"/>
+										<Text text="{CustomerName}"/>
+										<Text text="{BillingStatusDescription}"/>
+									
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
