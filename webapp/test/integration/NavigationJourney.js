@@ -2,7 +2,11 @@
 
 	sap.ui.define([
 		"sap/ui/test/opaQunit",
+<<<<<<< HEAD
 		"./pages/View1"
+=======
+		"./pages/ST_View1"
+>>>>>>> refs/heads/master
 	], function (opaTest) {
 		"use strict";
 

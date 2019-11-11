@@ -36,6 +36,7 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
+<<<<<<< HEAD
     },
     {
       "path": "/ES5_ODP",
@@ -44,6 +45,8 @@
         "name": "ES5_ODP"
       },
       "description": "ES5_ODP"
+=======
+>>>>>>> refs/heads/master
     }
   ],
   "sendWelcomeFileRedirect": true

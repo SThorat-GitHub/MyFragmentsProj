@@ -1,5 +1,6 @@
 specVersion: '1.0'
 metadata:
+<<<<<<< HEAD
   name: MyODPApp
 type: application
 builder:
@@ -25,3 +26,30 @@ builder:
       afterTask: webide-extension-task-lint
       configuration:
         nameSpace: demo
+=======
+  name: ST_Assignment1
+type: application
+builder:
+  customTasks:
+    - name: webide-extension-task-updateNeoApp
+      afterTask: generateVersionInfo
+      configuration:
+        destDir: dist
+        appFolder: webapp
+        nameSpace: SThorat
+    - name: webide-extension-task-updateManifestJson
+      afterTask: webide-extension-task-updateNeoApp
+      configuration:
+        appFolder: webapp
+        destDir: dist
+    - name: webide-extension-task-lint
+      afterTask: webide-extension-task-updateManifestJson
+      configuration:
+        destDir: dist
+        appFolder: webapp
+        nameSpace: SThorat 
+    - name: webide-extension-task-resources
+      afterTask: webide-extension-task-lint
+      configuration:
+        nameSpace: SThorat
+>>>>>>> refs/heads/master
